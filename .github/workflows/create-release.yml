@@ -8,8 +8,8 @@
 
 name: Create release
 
-on
-
+on:
+  watch:
 #  schedule:
 #    - cron: 0 4 */3 * *
 #  watch:
