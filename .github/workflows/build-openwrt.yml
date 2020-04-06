@@ -10,20 +10,20 @@ name: Build OpenWrt
 
 on:
   release:
-    types: published
-#  push:
-#    branches:
-#      - master
-#    paths:
-#      - '.config'
+    types: [published]
+  push:
+    branches:
+      - dev-lean-lede
+    paths:
+      - '.config'
 #  schedule:
 #    - cron: 0 8 * * 5
   watch:
-    types: started
+    types: [started]
 
 env:
-  REPO_URL: https://github.com/Lienol/openwrt.git
-  REPO_BRANCH: dev-19.07
+  REPO_URL: https://github.com/Lienol/openwrt
+  REPO_BRANCH: dev-lean-lede
   CONFIG_FILE: .config
   DIY_SH: diy.sh
   SSH_ACTIONS: true
