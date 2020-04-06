@@ -14,8 +14,8 @@ on:
   push:
     branches:
       - dev-lean-lede
-    paths:
-      - '.config'
+#  paths:
+#    - '.config'
 #  schedule:
 #    - cron: 0 8 * * 5
   watch:
