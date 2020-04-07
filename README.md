@@ -30,13 +30,15 @@
 
 * ssrp+
 
-* adbyby plus
+* adbyby plus+
 
-* aria2
+* ZeroTier
 
 * smartdns
 
-* ddns
+* KMS
+
+* UPNP
 
 等...
 (自用固件，是否可用请自行测试)
