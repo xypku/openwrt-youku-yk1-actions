@@ -26,13 +26,13 @@
 
 ## 插件
 
-* passwall
-
 * ssrp+
+
+* UnblockNeteaseMusic
 
 * adbyby plus+
 
-* ZeroTier
+* frpc
 
 * smartdns
 
