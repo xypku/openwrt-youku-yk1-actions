@@ -8,6 +8,7 @@
 
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.123.1/g' package/base-files/files/bin/config_generate
+sed -i 's/\"#src-git\"/\"src-git\"/g' ./feeds.conf.default
 git clone https://github.com/ujincn/luci-app-smartdns-compat.git package/luci-app-smartdns-compat
 git clone https://github.com/pymumu/smartdns.git package/smartdns
 git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
