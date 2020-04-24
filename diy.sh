@@ -17,3 +17,8 @@ git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 #git clone https://github.com/vernesong/OpenClash.git package/OpenClash
 ./scripts/feeds update -a
 ./scripts/feeds install -a
+
+# Modify target.mk
+cd include
+rm ./target.mk
+wget https://raw.githubusercontent.com/xypku/openwrt-youku-yk1-actions/master/target.mk
