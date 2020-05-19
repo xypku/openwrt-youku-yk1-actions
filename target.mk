@@ -18,8 +18,7 @@ block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget
 default-settings luci luci-app-adbyby-plus luci-app-autoreboot \
 luci-app-filetransfer luci-app-ssr-plus \
 luci-app-arpbind luci-app-wol luci-app-ramfree \
-luci-app-sfe luci-app-flowoffload luci-app-accesscontrol luci-app-cpufreq \
-ddns-scripts_aliyun ddns-scripts_dnspod
+luci-app-sfe luci-app-flowoffload luci-app-accesscontrol luci-app-cpufreq
 # For nas targets
 DEFAULT_PACKAGES.nas:=block-mount fdisk lsblk mdadm
 # For router targets
