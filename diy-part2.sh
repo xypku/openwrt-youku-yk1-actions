@@ -9,6 +9,7 @@
 #=================================================
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.123.1/g' package/base-files/files/bin/config_generate
+sed -i 's/\"#src-git\"/\"src-git\"/g' ./feeds.conf.default
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 #git clone https://github.com/kenzok8/openwrt-packages package/op-packages
 #=================================================
@@ -25,16 +26,7 @@ git clone https://github.com/jerrykuku/luci-app-vssr package/diy-packages/hellow
 git clone -b 3.6-40 https://github.com/liuran001/luci-app-passwall package/diy-packages/passwall
 # 获取Lienol-package
 git clone https://github.com/Lienol/openwrt-package package/diy-packages/lienol
-# 获取luci-app-diskman和依赖
-# mkdir -p package/diy-packages/luci-app-diskman && \
-# mkdir -p package/diy-packages/parted && \
-# wget https://raw.githubusercontent.com/lisaac/luci-app-diskman/master/Makefile -O package/diy-packages/luci-app-diskman/Makefile
-# wget https://raw.githubusercontent.com/lisaac/luci-app-diskman/master/Parted.Makefile -O package/diy-packages/parted/Makefile
-# 获取luci-app-serverchan
-# git clone https://github.com/tty228/luci-app-serverchan package/diy-packages/luci-app-serverchan
-# 获取luci-app-openclash 编译po2lmo
-# git clone -b master https://github.com/vernesong/OpenClash package/diy-packages/openclash
-# pushd package/diy-packages/openclash/luci-app-openclash/tools/po2lmo
+
 make && sudo make install
 popd
 #=================================================
