@@ -19,11 +19,12 @@ default-settings luci luci-app-adbyby-plus luci-app-autoreboot \
 luci-app-filetransfer luci-app-ssr-plus \
 luci-app-arpbind luci-app-wol luci-app-ramfree \
 luci-app-sfe luci-app-flowoffload luci-app-accesscontrol luci-app-cpufreq
+# For the basic set
+DEFAULT_PACKAGES.basic:=
 # For nas targets
 DEFAULT_PACKAGES.nas:=block-mount fdisk lsblk mdadm
 # For router targets
-DEFAULT_PACKAGES.router:=dnsmasq-full iptables ppp ppp-mod-pppoe firewall kmod-ipt-offload kmod-tcp-bbr
-DEFAULT_PACKAGES.bootloader:=
+DEFAULT_PACKAGES.router:=dnsmasq-full iptables ip6tables ppp ppp-mod-pppoe firewall kmod-ipt-offload
 
 ifneq ($(DUMP),)
   all: dumpinfo
